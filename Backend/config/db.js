@@ -2,7 +2,8 @@ import mongoose from "mongoose";
 
 const connectDB = async () => {
   try {
-    const mongoURL = process.env.LOCAL; // now using LOCAL variable
+    //const mongoURL = process.env.LOCAL; 
+      const mongoURL=process.env.URL// now using LOCAL variable
     const conn = await mongoose.connect(mongoURL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
